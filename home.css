@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{ 
+    height: 100%;
+    width:100%;
+}
+body {
+    height: 100%;
+    width:100%;
+    font-family: Arial, sans-serif;
+  }
+
+                                      /* Nav Bar   */
+ 
+
+                                                /* Main container */
+
+
+  .Maincontainer{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url('6381854.jpg');
+    background-position: center;
+    background-size:cover ;
+  }
+
+  .container1 {
+    height: 80%; /* Change height to auto for dynamic height */
+    width: 32%; /* Adjust width as needed */
+    max-width: 800px; /* Limit maximum width for larger screens */
+    font-size: 25px; /* Decrease font size for smaller screens */
+    line-height: 1.6; /* Increase line height for better readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    border-radius: 20px;
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+  .container2{
+    height: 70%;
+    width: 40%;
+    background-image: url('kindpng1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    transition: all 1s linear;
+  }
+  footer{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(46, 101, 156);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+  }
+
+
+    @media screen and (max-width:1246px) {
+        
+        .container1{
+            line-height:1.2;
+            width: 45%;
+        }
+        .container2{
+            height: 85%;
+        }
+    }
+    @media screen and (max-width:850px) {
+        
+        .container1{
+            line-height:1.1;
+        }
+        .container2{
+            height: 90%;
+        }
+    }
+
+    @media screen and (max-width:790px) {
+        
+        .container1{
+            line-height:1;
+            width: 50%;
+        }
+        .container2{
+            margin-right:5%;
+        }
+    }
+
+
+  
+
+  @media screen and (max-width: 635px) {
+
+    .Maincontainer{
+        flex-direction: column-reverse;
+        gap: 1%;
+    }
+    .container1{
+        width: 100%;
+        height: 45%;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .container2{
+        width: 100%;
+        height: 55%;
+        border-radius: 0;
+        margin-right:0 ;
+    }
+  }
+  @media screen and (max-width:420px) {
+        
+    .container1{
+        line-height:1;
+    }
+}
